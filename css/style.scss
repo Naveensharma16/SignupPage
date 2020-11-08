@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+$mobile-view : 767px;
+
+.form-container{
+    background-image: url("../images/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba($color: hsl(0, 100%, 74%), $alpha: 1.0);
+    height: 100vh;
+
+    h1{
+        color: #ffffff;
+        text-transform: capitalize;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    p{
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+
+    .serv-note{
+         color: #fff;
+         text-align: center;
+         background-color: hsl(248, 32%, 49%);
+         padding: 13px;
+         border-radius: 10px;
+          span{
+              font-weight: bold;
+          }
+    }
+
+
+    .register-form-outer{
+       background-color: #ffffff;
+        border-radius: 10px;
+        padding: 30px 45px;
+        
+       form{
+           display: flex;
+           flex-direction: column;
+           
+           input{
+               padding: 13px 10px;
+               border-radius: 5px;
+               border: 1px solid hsl(246, 25%, 77%);
+               outline: none;
+               width: 100%;
+           }
+           input:focus{
+             border: 1px solid hsl(248, 32%, 49%);
+           }
+
+           input[type=submit]{
+            background-color: hsl(154, 59%, 51%);
+            color: #fff;
+            font-weight: 700;
+           }
+
+           .form-group{
+               position: relative;
+
+               i{
+                   position: absolute;
+                   top: 20px;
+                   right: 20px;
+                   display: none;
+               }
+               small{
+                display: none;
+               }
+           }
+
+           .error{
+               i{
+                   color: #c0392b;
+                  display: block;
+               }
+
+               small{
+                   color: #c0392b;
+                   display: block;
+               }
+           }
+           .success{
+               i{
+                   color: #27ae60;
+                   display: block;
+               }
+           }
+
+       }
+
+       
+       .service-terms{
+        p{
+            color: hsl(246, 25%, 77%);
+            font-size: 12px;
+            text-align: center;
+            margin-bottom: 0;
+            font-family: 'Poppins', sans-serif;
+
+            a{
+                text-decoration: none;
+                color: hsl(0, 100%, 74%);
+                text-transform: capitalize;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+            }
+        }
+    }
+
+    }
+
+}
+
+
+@media only screen and(max-width: $mobile-view){
+    .form-container{
+        height: auto;
+        padding: 20px 0px;
+        text-align: center;
+
+        h1{
+            font-size: 26px;
+        }
+
+        .register-form-outer{
+            padding: 20px 15px;
+        }
+
+
+    }
+
+}

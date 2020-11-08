@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-container {
+  background-image: url("../images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ff7a7a;
+  height: 100vh;
+}
+
+.form-container h1 {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.form-container p {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.form-container .serv-note {
+  color: #fff;
+  text-align: center;
+  background-color: #6055a5;
+  padding: 13px;
+  border-radius: 10px;
+}
+
+.form-container .serv-note span {
+  font-weight: bold;
+}
+
+.form-container .register-form-outer {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 45px;
+}
+
+.form-container .register-form-outer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-container .register-form-outer form input {
+  padding: 13px 10px;
+  border-radius: 5px;
+  border: 1px solid #b9b6d3;
+  outline: none;
+  width: 100%;
+}
+
+.form-container .register-form-outer form input:focus {
+  border: 1px solid #6055a5;
+}
+
+.form-container .register-form-outer form input[type=submit] {
+  background-color: #38cc8c;
+  color: #fff;
+  font-weight: 700;
+}
+
+.form-container .register-form-outer form .form-group {
+  position: relative;
+}
+
+.form-container .register-form-outer form .form-group i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+}
+
+.form-container .register-form-outer form .form-group small {
+  display: none;
+}
+
+.form-container .register-form-outer form .error i {
+  color: #c0392b;
+  display: block;
+}
+
+.form-container .register-form-outer form .error small {
+  color: #c0392b;
+  display: block;
+}
+
+.form-container .register-form-outer form .success i {
+  color: #27ae60;
+  display: block;
+}
+
+.form-container .register-form-outer .service-terms p {
+  color: #b9b6d3;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-container .register-form-outer .service-terms p a {
+  text-decoration: none;
+  color: #ff7a7a;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 767px) {
+  .form-container {
+    height: auto;
+    padding: 20px 0px;
+    text-align: center;
+  }
+  .form-container h1 {
+    font-size: 26px;
+  }
+  .form-container .register-form-outer {
+    padding: 20px 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
